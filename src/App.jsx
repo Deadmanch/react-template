@@ -11,7 +11,6 @@ function App() {
 		{id:2, title: 'Javascript 2', body: 'Description'},
 		{id:3, title: 'Javascript 3', body: 'Description'}
 	])
-<<<<<<< HEAD
 	
 	// const bodyInputRef = useRef();
 	const [post, setPost] = useState({title: '', body: ''})
@@ -21,17 +20,10 @@ function App() {
 		setPost({title: '', body: ''})
 	}
 	
-=======
-	const [title, setTitle] = useState('');
-	const addNewPost = (e) => {
-		e.preventDefault();
-	}
->>>>>>> master
 	
 	return (
 		<div className='App'>
 			<form action="#">
-<<<<<<< HEAD
 				{/*Управляемый компонент*/}
 				<MyInput
 					value = {post.title}
@@ -49,14 +41,6 @@ function App() {
 				{/*	ref={bodyInputRef}*/}
 				{/*	type="text"*/}
 				{/*	placeholder='Описание поста'/>*/}
-=======
-				<MyInput
-					value = {title}
-					onChange = {e => setTitle(e.target)}
-					type="text"
-					placeholder='Название поста'/>
-				<MyInput type="text" placeholder='Описание поста'/>
->>>>>>> master
 				<MyBtn onClick={addNewPost}>Создать пост</MyBtn>
 			</form>
 			<PostList posts={posts} title={'Список постов JS'}/>
